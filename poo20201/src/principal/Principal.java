@@ -6,6 +6,6 @@ public class Principal {
 
 		
 		
-		System.out.println("teste");
+		System.out.println("12");
 	}
 }
