@@ -2,19 +2,18 @@ package principal;
 
 public class Livro {
 	
-	String Titulo ; 
+	private String Titulo;
+	private String Categoria;
+	private double Preco;
+	private String Autor;
+	private String Editora;
 	
-	private String getTitulo() {
+	
+	public Livro (String titulo) {
+		Titulo = titulo;		
+	}
+	
+	public String getTitulo ()	{
 		return Titulo;
 	}
-
-	private void setTitulo(String titulo) {
-		Titulo = titulo;
-	}
-
-	public Livro () {
-		
-		
-	}
-
 }
