@@ -10,10 +10,14 @@ public class Livro {
 	
 	
 	public Livro (String titulo) {
-		Titulo = titulo;		
+		setTitulo(titulo);		
 	}
 	
 	public String getTitulo ()	{
 		return Titulo;
+	}
+	
+	public void setTitulo (String titulo)	{
+		Titulo = titulo;
 	}
 }
