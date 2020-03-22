@@ -6,8 +6,20 @@ public class Programa {
 		
 		Funcionario bruno = new Funcionario("Bruno", "Rua dos bobos, num 0", 99887766, 5000, "12/03/2020");
 		
-		System.out.println(bruno.getNome());
+		System.out.println(
+				bruno.getSalario()+" "+
+				bruno.getData_de_admissao()+" "+
+				bruno.getData_de_demissao()				
+				);	
 		
+		bruno.promoverFuncionario(54);
+		
+		System.out.println(
+				"\n"+
+				bruno.getSalario()+" "+
+				bruno.getData_de_admissao()+" "+
+				bruno.getData_de_demissao()				
+				);
 		
 	}
 }

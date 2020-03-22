@@ -4,8 +4,8 @@ public class Funcionario {
 	
 	private String Nome;
 	private String Endereco;
-	private float Telefone;
-	private float Salario = 1045;
+	private int Telefone;
+	private double Salario = 1045;
 	private String Data_de_admissao = "Dia de hoje";
 	private String Data_de_demissao;
 	
@@ -26,15 +26,15 @@ public class Funcionario {
 	public double getTelefone() {
 		return Telefone;
 	}
-	public void setTelefone(float telefone) {
+	public void setTelefone(int telefone) {
 		Telefone = telefone;
 	}
 
 	public double getSalario() {
 		return Salario;
 	}
-	public void setSalario(float salario) {
-		Salario = salario;
+	public void setSalario(double d) {
+		Salario = d;
 	}
 
 	public String getData_de_admissao() {
@@ -52,7 +52,7 @@ public class Funcionario {
 	}
 
 	//Todos os atributos são informados
-	public Funcionario (String nome, String endereco, float telefone, float salario, String data_de_admissao) {
+	public Funcionario (String nome, String endereco, int telefone, double salario, String data_de_admissao) {
 		
 		Nome = nome;
 		Endereco = endereco;
@@ -62,7 +62,7 @@ public class Funcionario {
 	}
 	
 	//Sem salário
-	public Funcionario (String nome, String endereco, float telefone, String data_de_admissao) {
+	public Funcionario (String nome, String endereco, int telefone, String data_de_admissao) {
 		
 		Nome = nome;
 		Endereco = endereco;
@@ -71,7 +71,7 @@ public class Funcionario {
 	}
 	
 	//Sem data de admissão	
-	public Funcionario (String nome, String endereco, float telefone, float salario) {
+	public Funcionario (String nome, String endereco, int telefone, double salario) {
 		
 		Nome = nome;
 		Endereco = endereco;
@@ -80,7 +80,7 @@ public class Funcionario {
 	}
 	
 	//Sem data de admissão e sem salário
-	public Funcionario (String nome, String endereco, float telefone) {
+	public Funcionario (String nome, String endereco, int telefone) {
 		
 		Nome = nome;
 		Endereco = endereco;
@@ -99,11 +99,13 @@ public class Funcionario {
 
 	public void promoverFuncionario(int percentualPromocao) {
 		
-		setSalario(Salario+(Salario*(percentualPromocao/100)));
+		double valorPercentual = percentualPromocao/100;
+		
+		setSalario(Salario+(Salario*valorPercentual));
 	}
 	
 	public void promoverFuncionario() {
 		
-		setSalario(Salario+(Salario*(3/100)));
+		setSalario(Salario+(Salario*(0.03)));
 	}
 }
