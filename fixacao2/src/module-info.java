@@ -10,7 +10,8 @@ telefone
 salário
 data de admissão (MM/ANO, ex 03/2020, pode ser String).
 data de demissão (MM/ANO, ex 03/2020, pode ser String)
-Funcionários podem ser admitidos e instanciados na aplicação da empresa. Quando um funcionário é admitido é possível informar todos os dados exceto a data de demissão.
+Funcionários podem ser admitidos e instanciados na aplicação da empresa.
+ Quando um funcionário é admitido é possível informar todos os dados exceto a data de demissão.
 
 Existem três situações que devem ser tratadas:
 
