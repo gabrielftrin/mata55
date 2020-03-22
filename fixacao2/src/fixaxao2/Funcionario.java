@@ -8,7 +8,7 @@ public class Funcionario {
 	private float Salario = 1045;
 	private String Data_de_admissao = "Dia de hoje";
 	private String Data_de_demissao;
-			
+	
 	public String getNome() {
 		return Nome;
 	}
@@ -51,6 +51,7 @@ public class Funcionario {
 		Data_de_demissao = data_de_demissao;
 	}
 
+	//Todos os atributos são informados
 	public Funcionario (String nome, String endereco, float telefone, float salario, String data_de_admissao) {
 		
 		Nome = nome;
@@ -60,6 +61,7 @@ public class Funcionario {
 		Data_de_admissao = data_de_admissao;		
 	}
 	
+	//Sem salário
 	public Funcionario (String nome, String endereco, float telefone, String data_de_admissao) {
 		
 		Nome = nome;
@@ -68,6 +70,7 @@ public class Funcionario {
 		Data_de_admissao = data_de_admissao;		
 	}
 	
+	//Sem data de admissão	
 	public Funcionario (String nome, String endereco, float telefone, float salario) {
 		
 		Nome = nome;
@@ -76,6 +79,31 @@ public class Funcionario {
 		Salario = salario;		
 	}
 	
+	//Sem data de admissão e sem salário
+	public Funcionario (String nome, String endereco, float telefone) {
+		
+		Nome = nome;
+		Endereco = endereco;
+		Telefone = telefone;	
+	}
 	
+	public void demitirFuncionario(String data_de_demissao) {		
+		
+		setData_de_demissao(data_de_demissao);				
+	}
+	
+	public void demitirFuncionario() {
+				
+		setData_de_demissao("Data de hoje");
+	}
 
+	public void promoverFuncionario(int percentualPromocao) {
+		
+		setSalario(Salario+(Salario*(percentualPromocao/100)));
+	}
+	
+	public void promoverFuncionario() {
+		
+		setSalario(Salario+(Salario*(3/100)));
+	}
 }

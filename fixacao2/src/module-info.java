@@ -24,7 +24,8 @@ III.Podem não ser informadas a data de admissão e o salário.
 A classe funcionário também deve ter os seguintes métodos:
 
 void demitirFuncionario(string dataDemissao) - Nesse método poderá ser informada a data da demissão e se não foi informada, considerar o dia de hoje.
-void promoverFuncionario(int percentualPromocao) - O método para promover o funcionário recebe um percentual de promoção do tipo inteiro esse percentual deve ser acrescido ao salário atual do funcionário. Caso este percentual não seja informado considere 3%.
+void promoverFuncionario(int percentualPromocao) - O método para promover o funcionário recebe um percentual de promoção 
+do tipo inteiro esse percentual deve ser acrescido ao salário atual do funcionário. Caso este percentual não seja informado considere 3%.
  Após construir a classe, realizar o upload no arquivo .java
 
 */
