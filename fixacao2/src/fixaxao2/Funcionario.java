@@ -97,11 +97,9 @@ public class Funcionario {
 		setData_de_demissao("Data de hoje");
 	}
 
-	public void promoverFuncionario(int percentualPromocao) {
+	public void promoverFuncionario(double percentualPromocao) {
 		
-		double valorPercentual = percentualPromocao/100;
-		
-		setSalario(Salario+(Salario*valorPercentual));
+		setSalario(Salario+(Salario*percentualPromocao/100));		
 	}
 	
 	public void promoverFuncionario() {
