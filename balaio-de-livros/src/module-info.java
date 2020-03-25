@@ -2,8 +2,8 @@
  * 
  */
 /**
- * @author gtrindade
+ * @author trendstv
  *
  */
-module informacoes {
+module modulo_info {
 }
